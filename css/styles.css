@@ -1,16 +1,20 @@
     body {
     font-family: 'Roboto', sans-serif;
-    color: #2e2f42;
-    background-color: #ffffff;
+    color: var(--background-color);
+    background-color: var(--hero-title-color);
     }
     
     :root {
       --secondary-font: 'Raleway', sans-serif;
-      --subtitle-color: #2e2f42;
       --background-color: #2e2f42;
       --main-text-color: #434455;
       --logo-span-color: #4D5AE5;
       --link-hover-color: #404bbf;
+      --hero-title-color:  #ffffff;
+      --footer-logo-color:  #F4F4FD;
+      --footer-text-color: #E7E9FC;
+      
+
     }
         
         .visually-hidden {
@@ -78,7 +82,7 @@
           }
 
           .header-logo {
-            color: #2e2f42;
+            color: var(--background-color);
           }
 
           .header-logo span {
@@ -90,11 +94,11 @@
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-            color: #2e2f42;
+            color: var(--subtitle-color);
           }
 
           .header-link:hover,
-          .header-link:fokus {
+          .header-link:focus {
             color: var(--link-hover-color);
           }
 
@@ -103,11 +107,11 @@
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-            color: #434455;
+            color: var(--main-text-color);
           }
 
           .address-link:hover,
-          .address-link:fokus {
+          .address-link:focus {
             color: var(--link-hover-color);
           }
 
@@ -120,67 +124,109 @@
             line-height: 1.07;
             text-align: center;
             letter-spacing: 0.02em;
-            color: #ffffff;
+            color: var(--hero-title-color);
           }
 
           .hero-btn {
-            color: #ffffff;
-            background: #4d5ae5;
+            color: var(--hero-title-color);
+            background: var(--logo-span-color);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
           }
 
           .hero-btn:hover,
           .hero-btn:fokus {
-            background: #404bbf;
+            background: var(--link-hover-color);
             cursor: pointer;
           }
 
           .advantages-subitle {
-            color: var(--subtitle-color);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: var(--background-color);
           }
 
           .advantages-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
             color: var(--main-text-color);
           }
 
           .doing-title {
-            color: #2e2f42;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: var(--background-color);
           }
 
           .team {
-            background: #f4f4fd;
+            background: var(--footer-logo-color);
           }
 
           .team-subtitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
             text-align: center;
-            color: var(--subtitle-color);
+            letter-spacing: 0.02em;
+            color: var(--background-color);
           }
           
           .team-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
             text-align: center;
+            letter-spacing: 0.02em;
             color: var(--main-text-color);
           }
 
+          .img-fon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px 32px;
+            gap: 32px;
+            background: var(--hero-title-color);
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+            border-radius: 0px 0px 4px 4px;
+          }
+
           .filter-btn {
-            color: #4d5ae5;
-            background: #f4f4fd;
-            border: 1px solid #E7E9FC;
+            color: var(--logo-span-color);
+            background: var(--footer-logo-color);
+            border: 1px solid var(--footer-text-color);
             border-radius: 4px;
           }
 
           .filter-btn:hover,
           .filter-btn:fokus {
-            color:#FFFFFF;
-            background: #404bbf;
+            color: var(--hero-title-color);
+            background: var(--link-hover-color);
             cursor: pointer;
           }
 
           .portfolio-subtitle {
-            color: var(--subtitle-color);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: var(--background-color);
           }
 
           .portfolio-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1,5;
+            letter-spacing: 0.02em;
             color: var(--main-text-color);
           }
 
@@ -189,11 +235,23 @@
           }
           
           .footer-logo {
-            color: #F4F4FD;
+            color: var(--footer-logo-color);
           }
+
+          .footer-logo span {
+            color: var(--logo-span-color);
+          }
+
           .footer-text {
-            color: #E7E9FC;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1,5;
+            letter-spacing: 0.02em;
+            color: var(--footer-text-color);
           }
+
+
+
 
 
 
