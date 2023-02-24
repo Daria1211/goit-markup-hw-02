@@ -64,6 +64,7 @@
             align-items: center;
             text-align: center;
             letter-spacing: 0.04em;
+            cursor: pointer;
           }
 
           .title {
@@ -94,7 +95,7 @@
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-            color: var(--subtitle-color);
+            color: var(--background-color);
           }
 
           .header-link:hover,
@@ -149,8 +150,6 @@
           }
 
           .advantages-text {
-            font-weight: 400;
-            font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--main-text-color);
@@ -188,17 +187,12 @@
             color: var(--main-text-color);
           }
 
-          .img-fon {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0px 0px 32px;
-            gap: 32px;
+          .team-item {
             background: var(--hero-title-color);
             box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
             border-radius: 0px 0px 4px 4px;
           }
+
 
           .filter-btn {
             color: var(--logo-span-color);
